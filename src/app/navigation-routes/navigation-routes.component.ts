@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
 })
 
 export class NavigationRoutesComponent implements OnInit {
-  constructor(private location:Location, private router:Router) {};
+  constructor() {};
   ngOnInit(): void {}; 
 
 }

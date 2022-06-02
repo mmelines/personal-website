@@ -7,7 +7,7 @@ import { contacts } from '../../contact';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  contacts = contacts
+  contacts = contacts;
 
   constructor() {};
   ngOnInit(): void {

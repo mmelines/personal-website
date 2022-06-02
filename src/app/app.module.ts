@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //module imports
 import { ResumeModule } from './resume/resume.module';
+import { HomeModule } from './home/home.module';
 //form imports
 import { ResumeComponent } from './resume/resume.component';
+import { HomeComponent } from './home/home.component'
 import { NavigationComponent } from './navigation/navigation.component'
 import { NavigationRoutesComponent } from './navigation-routes/navigation-routes.component';
 
@@ -15,13 +17,15 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent, 
     ResumeComponent,
+    HomeComponent,
     NavigationComponent, 
     NavigationRoutesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    ResumeModule
+    ResumeModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

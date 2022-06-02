@@ -9,7 +9,7 @@ export interface Visual {
 
 export const visual = [
   {
-      name: 'Portrait of Georgianne',
+      name: 'Portrait',
       date: 'April 2022',
       path: '',
       alt_text: 'A Portrait of a Child',

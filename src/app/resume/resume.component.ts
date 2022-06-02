@@ -8,7 +8,7 @@ import { resume } from '../resume';
 })
 
 export class ResumeComponent implements OnInit {
-  resume = resume
+  resume = resume;
 
   constructor() {};
   ngOnInit(): void {

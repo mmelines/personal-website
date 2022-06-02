@@ -1,0 +1,13 @@
+<!--(mouseenter) ="mouseEnter('div a') "  (mouseleave) ="mouseLeave('div A')"-->
+<div id="important-space"></div>
+<div id="contact-icon-container">
+    <div id="contact-spacer">
+
+    </div>
+    <div *ngFor="let contact of contact_links" class="icon-container">
+        <a href={{contact.link}}>
+            <img src={{contact.gray_icon_link}} class="icon-display grey-link {{contact.website_name}}"/>
+            <img src={{contact.color_icon_link}} class="icon-display hidden-icon color-link {{contact.website_name}}"/>
+        </a>
+    </div>
+</div>

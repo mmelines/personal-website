@@ -1,0 +1,60 @@
+
+.icon-display {
+    display: block;
+    border: 2px solid black;
+}
+
+@media (min-width: 650px){
+    #contact-icon-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-self: end;
+        width: 8em;
+        height: 100%;
+        margin-bottom: 0px !important;
+    }
+    #contact-spacer {
+        height: 45%;
+    }
+    .icon-display {
+        height: 6em;
+        width: 6em;
+        margin: .4em;
+    }
+    .hidden-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #contact-icon-container {
+        background-color: pink;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 88%;
+        margin: 0px auto 0px 4px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #contact-icon-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 88%;
+        margin: 0px auto 0px 4px;
+    }
+    #contact-spacer {
+        display: none;
+    }
+    .icon-display {
+        width:5.4em;
+    }
+    .grey-link {
+        display: none;
+    }
+}

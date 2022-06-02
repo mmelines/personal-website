@@ -11,8 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 const routes: Routes = [
-  {path: 'resume', component:ResumeComponent, pathMatch: 'full'},
   {path: '', component:HomeComponent, pathMatch: 'full'},
+  {path: 'resume', component:ResumeComponent, pathMatch: 'full'},
   {path: 'navigation', component:NavigationRoutesComponent, pathMatch: 'full'},
   {path: 'writing', component:WritingComponent, pathMatch: 'full'},
   {path: 'visual', component:VisualComponent, pathMatch: 'full'},
