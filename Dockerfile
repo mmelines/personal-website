@@ -1,9 +1,12 @@
-FROM node:12-slim
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install -g @angular/cli
+FROM node:latest as build-step
+RUN mkdir -p /app
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-COPY . ./
-RUN npm run build
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+COPY . /app
+RUN npm run build --prod
+
+# stage 2
+FROM nginx:alpine
+COPY --from=build-step /app/dist/personal-website /usr/share/nginx/html
+EXPOSE 4200:8080 
