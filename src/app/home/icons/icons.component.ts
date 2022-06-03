@@ -9,7 +9,7 @@ import { contact_links } from '../contact_icons'
 
 export class IconComponent implements OnInit {
   contact_links = contact_links;
-
+    
   ngOnInit(): void {
   };
 }
