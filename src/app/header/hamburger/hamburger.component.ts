@@ -1,15 +1,14 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { ConnectableObservable } from 'rxjs';
 
 @Component({
-  selector: 'app-hamburger',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css'],
+  selector: 'nav-hamburger',
+  templateUrl: './hamburger.component.html',
+  styleUrls: ['./hamburger.component.css'],
 })
 
-export class NavigationComponent implements OnInit {
+export class HamburgerComponent implements OnInit {
   show_nav:boolean;
   current_route:string;
   prev_route:string;

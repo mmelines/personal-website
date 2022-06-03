@@ -1,0 +1,9 @@
+<div id="navbar-link-container">
+    <div *ngFor="let navlink of nav_links">
+        <a routerLink="{{navlink.routerlink}}">
+            <div class="navbar-link" id="{{navlink.id}}">
+                {{navlink.text}}
+            </div>
+        </a>
+    </div>
+</div>

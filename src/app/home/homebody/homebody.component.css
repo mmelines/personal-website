@@ -7,9 +7,7 @@ font-family: 'Rubik', sans-serif;
 */
 #home-container {
     display: inline-flex;
-    margin-left: -2em;
-    width: 100%;
-    height: 100%;
+    margin-left: -2px;
 }
 
 #home-main {
@@ -18,17 +16,16 @@ font-family: 'Rubik', sans-serif;
 }
 
 #main-header-1 {
+    padding: .2em 0;
     line-height: .7em;
 }
 
 #main-header-2 {
     text-align: right;
-    margin-top: -.4em;
-    padding-right: 1.2em;
+    margin-top: -.2em;
 }
 
 .main-sm {
-    padding-left: 7%;
     z-index: 20;
     position: relative;
     font-size: 1.5em;
@@ -44,12 +41,13 @@ font-family: 'Rubik', sans-serif;
 }
 
 @media (max-width: 800px) {
+    #home-container {
+        width: 100%;
+        height: 100%;
+    }
     #home-main {
-        min-width: 400px;
-        max-width: 90%;
-        min-height: 100%;
-        margin: 0 auto 0 -3%;
-        padding: 2% 3%;
+        width: 80%;
+        margin: 1.5em;
     }
     #contacts-row {
         display: none;
@@ -60,15 +58,14 @@ font-family: 'Rubik', sans-serif;
     }
     .main-sm {
         line-height: .95em;
-
     }
 }
 @media (min-width: 800px) {
     #home-main {
-        padding: 3em 1em;
         min-width: 500px;
-        max-width: 70%;
-        margin: 0 auto 0 5em;
+        max-width: 90%;
+        margin: 0 1em;
+        padding: 7em 0;
     }
     #contacts-row {
         display: flex;
@@ -91,7 +88,21 @@ font-family: 'Rubik', sans-serif;
     .main-lg {
         font-size: 6em;
     }
+    #main-header-2 {
+        padding-right: 3em;
+    }
     .main-sm {
         line-height: .85em;}
+    #main-pre-text-1 {
+        padding-left: 6%;
+        width: 70%;
+    }
+    #main-pre-text-2 {
+        padding-left: 3%;
+        width: 74%;
+    }
+    #main-body {
+        width: 95%;
+    }
 }
 

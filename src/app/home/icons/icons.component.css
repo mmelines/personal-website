@@ -29,7 +29,6 @@
 
 @media screen and (max-height: 500px) {
     #contact-icon-container {
-        background-color: pink;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;

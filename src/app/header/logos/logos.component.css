@@ -1,0 +1,36 @@
+#logo-container {
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.logo_box {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#logo-container-lg {
+    padding-top: .4em;
+    font-size: 2.5em;
+}
+
+#logo-container-sm {
+    padding-top: .4em;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:780px) {
+    #logo-container-sm {
+        display: none;
+    }
+}
+@media screen and (max-width:780px) {
+    #logo-container-lg {
+        display: none;
+    }
+}
