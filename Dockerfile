@@ -1,12 +1,12 @@
 FROM node:latest as build-step
-RUN mkdir -p /app
-WORKDIR /app
-COPY package.json /app
+WORKDIR /dist/src/app
+RUN npm cache clean --force
+COPY . .
 RUN npm install
-COPY . /app
-RUN npm run build --prod
+RUN npm run build
 
 # stage 2
 FROM nginx:alpine
-COPY --from=build-step /app/dist/personal-website /usr/share/nginx/html
-EXPOSE 4200:8080 
+COPY --from=build-step /dist/src/app/dist/personal-website/browser /usr/share/nginx/html
+COPY nginx_conf/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
